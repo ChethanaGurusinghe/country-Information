@@ -11,17 +11,25 @@ function searchByName(){
             root.innerHTML=`
                 <section>
                     <p><img src="${element.flags.png}" alt=""></p>
-                    <h1>${element.name.official}</h1>
-                    <p>${element.capital[0]}</p>
-                    <p></p>
+                    <h4 style="color: midnightblue;">Official Name    : </h4><h3 style="color: cornflowerblue;">${element.name.official}</h3>
+                    <h4 style="color: midnightblue;">Capital City     : </h4><p style="color: cornflowerblue;">${element.capital[0]}</p>
+                    <h4 style="color: midnightblue;">Region           :</h4><p style="color: cornflowerblue;">${element.region}</p>
+                    <h4 style="color: midnightblue;">population       :</h4><p style="color: cornflowerblue;">${element.population}</p>
+                    <h4 style="color: midnightblue;">currency         :</h4><p style="color: cornflowerblue;">${element.currencies[0]}</p>
+                    <h4 style="color: midnightblue;">Domain Name      :</h4><p style="color: cornflowerblue;">${element.altSpellings[0]}</p>
+                    <h4 style="color: midnightblue;">See more Details :</h4><a href="about.js">Click here</a>
+                    
                 </section>
                 `;
 
             console.log(element.name.official);
             console.log(element.flags.png);
             console.log(element.capital[0]); 
+            console.log(element.region);
+            console.log(element.population);
+            console.log(element.currencies[0]);
+            console.log(element.altSpellings[0]);
         });
-    
     })
     
 }
